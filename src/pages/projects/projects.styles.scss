@@ -1,0 +1,71 @@
+body {
+	min-height: 100vh;
+	background-color: #88888A;
+	margin:50px;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.website-icon{
+	width:30px;
+	margin: 40px;
+}
+.heading {
+	font-size: 28px;
+    font-weight: 200;
+    padding-bottom: 100px;
+    padding-top: 40px;
+	text-align: center;
+	color: white;
+}
+#modal{
+	background-color: white;
+}
+.modal-pic{
+	width: 200px;
+}
+.heading span {
+	display: block;
+}
+
+.project {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.project-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(99, 0, 99, 0.27);
+	overflow: hidden;
+}
+
+.project-image {
+	display: block;
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.project-image:hover {
+	transform: scale(1.15);
+}
+
+@supports (display: grid) {
+	.project {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.project,
+	.project-item {
+		margin: 0;
+	}
+}

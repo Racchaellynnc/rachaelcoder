@@ -1,0 +1,69 @@
+.name-box {
+    font-size: 44px;
+    font-weight: 200;
+    color: white;
+    padding: 40px;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    background-color: #88888a;
+}
+
+.intro-text{
+    width: 77%;
+    margin-top: -30px;
+}
+
+.photo {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.photo-box{
+    margin: auto;
+    align-content: center;
+}
+
+.landing-page {
+    background-color: #88888a;
+    
+}
+.text-box {
+    height: 200px;
+    width: 77%;
+    color: white;
+    box-shadow: 0px 27px 57px 7px rgba(99, 0, 99, 0.27);
+    border-radius: 8px;
+    padding: 77px;
+    font-size: 18px;
+    font-weight: 200;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+@media screen and (max-width: 800px){
+.intro-text{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-size: 12px;
+    margin-top: -55px;
+}
+.text-box {
+    height: 250px;
+    width: 100%;
+}
+.name-box{
+    font-size: 28px;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+}
+}
