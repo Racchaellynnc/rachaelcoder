@@ -96,13 +96,6 @@ const ProjectPage = () => (
 
   
 
-  <div className="project-item">
-    <Photo className="project-image"  alt="Project5" />
-  </div>
-
-  <div className="project-item">
-    <Photo className="project-image"  alt="Project6" />
-  </div>
 
 </div>
 
