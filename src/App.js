@@ -13,6 +13,7 @@ class App extends React.Component {
         <Router>
          <Header />
           <Switch>
+            <Route exact path='/' component={AboutPage} />
             <Route exact path='/about' component={AboutPage} />
             <Route exact path='/projects' component={ProjectsPage} />
             <Route path='/contactme' component={ContactMePage} />

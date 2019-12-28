@@ -1,12 +1,15 @@
 import React from 'react';
 import './about-page.styles.scss';
 import { ReactComponent as Photo } from '../../assets/meee.svg';
-
+import { ReactComponent as SkillsPhoto } from '../../assets/skillss.svg';
 
 const AboutPage = () => (
     <div className='landing-page'>
       <div className="name-box">
         Rachael Coder
+      </div>
+      <div className="name-title">
+        Full-Stack Developer
       </div>
       <div className="photo-box">
         <Photo className='photo' />
@@ -20,7 +23,13 @@ const AboutPage = () => (
             as humanley possible, drinking coffee, and making the world a 
             better place.  
           </div>
+          
         </div>
+
+      <div className='skill-box'> 
+        <SkillsPhoto className='skills' />
+      </div>
+
       </div>
   );
 

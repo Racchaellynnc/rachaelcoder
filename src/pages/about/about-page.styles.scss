@@ -8,6 +8,16 @@
     text-align: center;
     background-color: #88888a;
 }
+.name-title {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    background-color: #88888a;
+}
 
 .intro-text{
     width: 77%;
@@ -21,7 +31,10 @@
     margin-right: auto;
     margin-bottom: 100px;
 }
-
+.photo:hover{
+    border-radius: 30%;
+}
+ 
 .photo-box{
     margin: auto;
     align-content: center;
@@ -43,8 +56,29 @@
     justify-content: center;
     margin: auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     display: flex;
+    line-height: 33px;
+}
+.skill-box {
+    height: 600px;
+    width: 77%;
+    color: white;
+    box-shadow: 0px 27px 57px 7px rgba(99, 0, 99, 0.27);
+    border-radius: 8px;
+    padding-left: 77px;
+    padding-right:77px;
+    font-size: 18px;
+    font-weight: 200;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+    display: flex;
+}
+.skills {
+    width: 600px;
+    height: 600px;
 }
 
 @media screen and (max-width: 800px){
@@ -56,8 +90,14 @@
     margin-top: -55px;
 }
 .text-box {
-    height: 250px;
+    height: 400px;
     width: 100%;
+}
+.skill-box {
+    height: 300px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .name-box{
     font-size: 28px;
@@ -65,5 +105,9 @@
 .photo {
     width: 150px;
     height: 150px;
+}
+.skills {
+    width: 400px;
+    height: 300px;
 }
 }
