@@ -71,17 +71,10 @@ const ProjectPage = () => (
       <Modal.Description>
        
         <p>
-          I worked on Lavish Web during and built the Landing Page, Job Board, and part of the Blog. I designed and built UI/UX code for several projects on a
-          team of developers. I built applications using HTML, CSS,
-          Node, and JavaScript. I used React and Vue for building
-          SPA functionality. I was trained to use proper coding standards,
-          code documentation, and proper technologies for
-          maintaining codebase. I Gained experience with Firebase,
-          Google Cloud, Github, Bitbucket, Jira and Asana. I worked
-          in an Agile environment.
+          This is a person project that I have been working on to display my art. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma. 
         </p>
         <p> Want to see the Website? </p>
-        <a className='website-icon' href='https://www.blackliteart.com/'>
+        <a className='website-icon' href='https://blackliteart.com/'>
           <Website  />
         </a>
       </Modal.Description>
@@ -89,25 +82,15 @@ const ProjectPage = () => (
   </Modal>
 
   <Modal trigger={<Cf className="project-image">Show Modal</Cf >}>
-    <Modal.Header className='modal-header'> Castin Frontier </Modal.Header>
+    <Modal.Header className='modal-header'> Casting Frontier </Modal.Header>
     <Modal.Content image>
       <Image wrapped size='medium' className='modal-pic' src={Cf} />
       <Modal.Description>
        
         <p>
-          I worked on Lavish Web during and built the Landing Page, Job Board, and part of the Blog. I designed and built UI/UX code for several projects on a
-          team of developers. I built applications using HTML, CSS,
-          Node, and JavaScript. I used React and Vue for building
-          SPA functionality. I was trained to use proper coding standards,
-          code documentation, and proper technologies for
-          maintaining codebase. I Gained experience with Firebase,
-          Google Cloud, Github, Bitbucket, Jira and Asana. I worked
-          in an Agile environment.
+          This is a freelance project that I worked on using Vue, Axios, and foundations.
         </p>
-        <p> Want to see the Website? </p>
-        <a className='website-icon' href='https://www.blackliteart.com/'>
-          <Website  />
-        </a>
+
       </Modal.Description>
     </Modal.Content>
   </Modal>
