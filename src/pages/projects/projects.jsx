@@ -71,12 +71,12 @@ const ProjectPage = () => (
       <Modal.Description>
        
         <p>
-          This is a person project that I have been working on to display my art. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma. 
+          This is a freelance project that I built to display art collections. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma. 
         </p>
-        <p> Want to see the Website? </p>
-        <a className='website-icon' href='https://blackliteart.com/'>
-          <Website  />
-        </a>
+        {/* <p> Want to see the Website? </p>
+        <a className='website-icon' href='https://blackliteart.com/'> */}
+          {/* <Website  /> */}
+        {/* </a> */}
       </Modal.Description>
     </Modal.Content>
   </Modal>
