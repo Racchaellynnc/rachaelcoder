@@ -9,13 +9,15 @@
     color: white;
 }
 
-.container {
-    background-color: #588888;
+.box {
+    background-color: #97889b;
     width: 35%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     border-radius: 4px;
+    margin-bottom: 77px;
+    padding: 22px;
 }
 
 input{
@@ -24,19 +26,21 @@ input{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    border-radius: 2px;
+    border-radius: 22px;
+    padding: 12px;
+    border: none;
 }
 
 .submit{
     width: 70px;
     height: 40px;
     padding: 10px;
-    display: flex;
+    background-color: #7E6E82;
+    color: white;
+    border: none;
 }
 
 .comments{
-    padding-top: 10px;
-    padding-bottom: 200px; 
     height: 200px;
 }
 
@@ -50,7 +54,7 @@ input{
     width: 300px;
     line-height: 29px;
 }
-.container{
+.box{
     width: 90%;
 }
 
