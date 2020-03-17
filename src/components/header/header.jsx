@@ -9,15 +9,15 @@ const navLinks = [
 ]
 
 const Header = () => (
-    <div className='header'>
-      <div className='options'>
-        { navLinks.map((obj) => (
+  <div className='header'>
+    <div className='options'>
+      {navLinks.map((obj) => (
         <Link className='option' to={obj.path}>
           {obj.title}
         </Link>
-        ))}
-      </div>
+      ))}
     </div>
-  );
+  </div>
+);
 
-  export default Header;
+export default Header;

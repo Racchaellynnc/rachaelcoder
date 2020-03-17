@@ -1,36 +1,37 @@
 import React from 'react';
 import './about-page.styles.scss';
-import { ReactComponent as Photo } from '../../assets/meee.svg';
-import { ReactComponent as SkillsPhoto } from '../../assets/skillss.svg';
+import { ReactComponent as BackgroundPhoto } from '../../assets/0000000.svg';
+import CardComponent from '../../components/cards/cards';
+
 
 const AboutPage = () => (
-    <div className='landing-page'>
-      <div className="name-box">
-        Rachael Coder
-      </div>
-      <div className="name-title">
-        Full-Stack Developer
-      </div>
-      <div className="photo-box">
-        <Photo className='photo' />
-      </div>
-      <div className='text-box'>
+	<div class="ui vertically divided grid">
+		<div class="two column row">
+			<div class="column">
+				<BackgroundPhoto className="pic" />
+			</div>
+			<div class="column intro">
+				<div className="name">
+					<div className="text">
+						Rachael Coder
+					</div>
+				</div>
+			</div>
+		</div>
+		<div className="section">
+			<div class="my-title">
+				<div className="title-section">
+					I am a Full-Stack Web Developer, UX/UI Designer, and Game Engineer.<br></br><hr></hr>
+				</div>
+			</div>
+			<div class="card-title">
+				<div className="card-section">
 
-          <div className='intro-text'>
-            Welcome to my portfolio! I am thrilled that you are
-            looking at my website. A few of my favorite things to do are going 
-            to the beach, eating at vegan resturants, writing as much code 
-            as humanley possible, drinking coffee, and making the world a 
-            better place.  
-          </div>
-          
-        </div>
-
-      <div className='skill-box'> 
-        <SkillsPhoto className='skills' />
-      </div>
-
-      </div>
-  );
+					<CardComponent />
+				</div>
+			</div>
+		</div>
+	</div >
+);
 
 export default AboutPage;

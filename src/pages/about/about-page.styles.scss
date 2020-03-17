@@ -1,113 +1,80 @@
-.name-box {
-    font-size: 44px;
-    font-weight: 200;
-    color: white;
-    padding: 40px;
-    margin: auto;
-    height: 100px;
+
+.ui.grid>.row {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+.ui[class*="vertically divided"].grid>.row>.column {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.intro {
+    font-size: 27px;
+    top: 328px;
+    left: 72px; 
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.name {
+    background-color: white;
+    width: 275px;
+    height: 255px;
+    padding-top: 90px;
     text-align: center;
-    background-color: #88888a;
 }
-.name-title {
-    font-size: 30px;
-    font-weight: 100;
-    color: white;
-    padding: 10px;
+.text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    background-color: white;
+}
+.skills{
+    background-color: #312040;
+    width: 522px;
+    margin-top: -355px;
+    padding: 50px;
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.my-title {
+    display: flex;
+    width: 100%;
+    margin-top: -10px;
+    padding: 50px;
+}
+.title-section{
+    display: flex;
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
     margin: auto;
-    height: 100px;
-    text-align: center;
-    background-color: #88888a;
+    padding-left: 50px;
 }
-
-.intro-text{
-    width: 77%;
-    margin-top: -30px;
-}
-
-.photo {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-.photo:hover{
-    border-radius: 30%;
-}
- 
-.photo-box{
-    margin: auto;
-    align-content: center;
-}
-
-.landing-page {
-    background-color: #88888a;
+.card-title{
+    width: 100%;
+    padding: 30px;
     
 }
-.text-box {
-    height: 200px;
-    width: 77%;
-    color: white;
-    box-shadow: 0px 27px 57px 7px rgba(99, 0, 99, 0.27);
-    border-radius: 8px;
-    padding: 77px;
-    font-size: 18px;
-    font-weight: 200;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 70px;
+.pic{ 
+    width: 1500px;
+}
+.card-section{
+    width: 100%;
     display: flex;
-    line-height: 33px;
-}
-.skill-box {
-    height: 600px;
-    width: 77%;
-    color: white;
-    box-shadow: 0px 27px 57px 7px rgba(99, 0, 99, 0.27);
-    border-radius: 8px;
-    padding-left: 77px;
-    padding-right:77px;
-    font-size: 18px;
-    font-weight: 200;
+    flex-wrap: wrap;
+    padding: 20px;
     justify-content: center;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 70px;
-    display: flex;
 }
-.skills {
-    width: 600px;
-    height: 600px;
-}
+.section {
+    width: 100%;
+    background-color: white;
 
+}
 @media screen and (max-width: 800px){
-.intro-text{
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    font-size: 12px;
-    margin-top: -55px;
-}
-.text-box {
-    height: 400px;
-    width: 100%;
-}
-.skill-box {
-    height: 300px;
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.name-box{
-    font-size: 28px;
-}
-.photo {
-    width: 190px;
-    height: 190px;
-}
-.skills {
-    width: 400px;
-    height: 300px;
-}
+    .title-section {
+        padding-left: 10px;
+        line-height: 27px;
+    }
+    .intro {
+        left: -150px;
+    }
 }

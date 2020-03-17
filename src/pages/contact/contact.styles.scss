@@ -3,19 +3,20 @@
     font-weight: 222;
     line-height: 1;
     margin: auto;
-    width: 666px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    color: white;
+    width: 60%;
+    padding-top: 100px;
+    padding-bottom: 77px;
+    color: #2A1C33;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .box {
-    background-color: #97889b;
-    width: 35%;
+    background-color: #396E8F;
+    width: 40%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 4px;
+    border-radius: 24px;
     margin-bottom: 77px;
     padding: 22px;
 }
@@ -35,34 +36,61 @@ input{
     width: 70px;
     height: 40px;
     padding: 10px;
-    background-color: #7E6E82;
+    background-color: #2A1C33;
     color: white;
     border: none;
+}
+.submit:hover {
+    background-color: #ADE6E6;
+    color: black;
 }
 
 .comments{
     height: 200px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
 .contact-box {
     font-size: 22px;
     font-weight: 200;
-    padding: 20px;
-    margin-top: 100px;
+    padding: 10px;
+    margin-top: 70px;
     margin-bottom: 100px;
-    width: 300px;
+    width: 70%;
     line-height: 29px;
 }
 .box{
-    width: 90%;
+    width: 60%;
 }
 
 input {
+    margin-top: 15px;
     width: 100%;
-    height: 20px;
+    height: 40px;
 }
 .comments{
     padding-top: 10px;
 }
 }
+@media screen and (max-width: 400px) {
+    .contact-box {
+        font-size: 22px;
+        font-weight: 200;
+        padding: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 300px;
+        line-height: 29px;
+    }
+    .box{
+        width: 90%;
+    }
+    
+    input {
+        width: 100%;
+        height: 30px;
+    }
+    .comments{
+        padding-top: 10px;
+    }
+    }
