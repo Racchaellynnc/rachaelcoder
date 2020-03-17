@@ -1,21 +1,21 @@
 import React from 'react';
 import './about-page.styles.scss';
-import { ReactComponent as BackgroundPhoto } from '../../assets/0000000.svg';
+import { ReactComponent as BackgroundPhoto } from '../../assets/rachael.svg';
 import CardComponent from '../../components/cards/cards';
+// import { ReactComponent as Me } from '../../assets/mee.svg';
 
 
 const AboutPage = () => (
-	<div class="ui vertically divided grid">
-		<div class="two column row">
-			<div class="column">
-				<BackgroundPhoto className="pic" />
-			</div>
-			<div class="column intro">
-				<div className="name">
-					<div className="text">
-						Rachael Coder
-					</div>
+	<div class="">
+		<div class="">
+			<div class="">
+				<div className="pic-container">
+					<BackgroundPhoto className="pic" />
 				</div>
+			</div>
+
+			<div className="text-name">
+				Rachael Coder
 			</div>
 		</div>
 		<div className="section">

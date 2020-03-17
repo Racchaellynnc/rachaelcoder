@@ -30,3 +30,15 @@
       }
     }
   }
+
+  @media screen and (max-width: 800px){
+    .header .options .option{
+      color: #396e8f;
+      background-color: #2A1C33;
+      width: 100%;
+      padding: 35px;
+      border: none;
+      margin: 0;
+  }
+
+}
