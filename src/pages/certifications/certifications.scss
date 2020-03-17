@@ -25,11 +25,15 @@ body {
 #modal{
 	background-color: white;
 }
-.modal-pic{
-	width: 200px;
-}
+
 .heading span {
 	display: block;
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
 }
 
 .project {

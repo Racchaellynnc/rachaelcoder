@@ -87,16 +87,36 @@
 @media screen and (max-width: 380px){
 
     .pic {
-        width: 400px;
+        width: 380px;
     }
     .intro {
-        top: 58px;
+        top: 68px;
         font-size: 18px;
         left: -10px;
     }
     .name{
-        width: 150px;
-        height: 130px;
-        padding-top: 50px;
+        width: 100px;
+        height: 90px;
+        padding-top: 25px;
+    }
+    .ui.grid>.row {
+        padding-top: 14px;
+    }
+}
+@media screen and (max-width: 320px){
+
+    .pic {
+        width: 320px;
+    }
+    .intro {
+        top: 58px;
+        font-size: 18px;
+        left: -20px;
+    }
+    .name{
+        background-color: 396e8f;
+    }
+    .ui.grid>.row {
+        padding-top: 14px;
     }
 }

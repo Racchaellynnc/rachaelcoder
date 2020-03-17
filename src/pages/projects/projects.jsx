@@ -20,24 +20,23 @@ const ProjectPage = () => (
     <div className="project">
       <Modal trigger={<CoderalityPhoto className="project-image">Show Modal</CoderalityPhoto>}>
         <Modal.Header className='modal-header'>Coderality</Modal.Header>
-        <Modal.Content image>
-          <Modal.Description>
 
-            <p>
-              I made an e-commerce store that sells Programming Tutorials using React, Redux, Hooks, GraphQL, StripeAPI, and Firebase. .
+        <Modal.Description>
+
+          <p>
+            I made an e-commerce store that sells Programming Tutorials using React, Redux, Hooks, GraphQL, StripeAPI, and Firebase. .
         </p>
 
-            <p> Want to see the Code or the Website? </p>
-            <a href='https://github.com/Racchaellynnc/coding-store'>
-              <Github />
-            </a>
-            <a className='website-icon' href='https://coderality.com/'>
-              <Website />
-            </a>
+          <p> Want to see the Code or the Website? </p>
+          <a href='https://github.com/Racchaellynnc/coding-store'>
+            <Github />
+          </a>
+          <a className='website-icon' href='https://coderality.com/'>
+            <Website />
+          </a>
 
 
-          </Modal.Description>
-        </Modal.Content>
+        </Modal.Description>
       </Modal>
 
       <Modal trigger={<LwPhoto className="project-image">Show Modal</LwPhoto>}>
@@ -64,18 +63,17 @@ const ProjectPage = () => (
       </Modal>
       <Modal trigger={<Gita className="project-image">Show Modal</Gita >}>
         <Modal.Header className='modal-header'> Glow in the Art </Modal.Header>
-        <Modal.Content image>
-          <Modal.Description>
 
-            <p>
-              This is a freelance project that I built to display art collections. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma.
+        <Modal.Description>
+
+          <p>
+            This is a freelance project that I built to display art collections. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma.
         </p>
-            {/* <p> Want to see the Website? </p>
+          {/* <p> Want to see the Website? </p>
         <a className='website-icon' href='https://blackliteart.com/'> */}
-            {/* <Website  /> */}
-            {/* </a> */}
-          </Modal.Description>
-        </Modal.Content>
+          {/* <Website  /> */}
+          {/* </a> */}
+        </Modal.Description>
       </Modal>
 
       <Modal trigger={<Cf className="project-image">Show Modal</Cf >}>
@@ -92,31 +90,29 @@ const ProjectPage = () => (
       </Modal>
       <Modal trigger={<RecipePhoto className="project-image">Show Modal</RecipePhoto>}>
         <Modal.Header className='modal-header'>Recipe Search </Modal.Header>
-        <Modal.Content image>
-          <Modal.Description>
 
-            <p>
-              I made this project during my freelance work in 2017 using a Recipe API. I designed the layout using CSS grids and React.
+        <Modal.Description>
+
+          <p>
+            I made this project during my freelance work in 2017 using a Recipe API. I designed the layout using CSS grids and React.
         </p>
-            <p> Want to see the Code? </p>
-            <a href='https://github.com/Racchaellynnc/react-recipe-app'>
-              <Github /></a>
-          </Modal.Description>
-        </Modal.Content>
+          <p> Want to see the Code? </p>
+          <a href='https://github.com/Racchaellynnc/react-recipe-app'>
+            <Github /></a>
+        </Modal.Description>
       </Modal>
       <Modal trigger={<CcPhoto className="project-image">Show Modal</CcPhoto>}>
         <Modal.Header className='modal-header'>Captivating Clicks </Modal.Header>
-        <Modal.Content image>
-          <Modal.Description>
 
-            <p>
-              I made this project while I was a freelancer using Angular 2. I made the Front-End using CSS grids, MaterialUI and Angular. The Back-End consists of Firebase, Node, and MongoDB. I used Google Cloud Functions to implement the photo uploading feature where it stores users and comments in MongoDB.
+        <Modal.Description>
+
+          <p>
+            I made this project while I was a freelancer using Angular 2. I made the Front-End using CSS grids, MaterialUI and Angular. The Back-End consists of Firebase, Node, and MongoDB. I used Google Cloud Functions to implement the photo uploading feature where it stores users and comments in MongoDB.
         </p>
-            <p> Want to see the Code? </p>
-            <a href='https://github.com/Racchaellynnc/Angular-Website'>
-              <Github /></a>
-          </Modal.Description>
-        </Modal.Content>
+          <p> Want to see the Code? </p>
+          <a href='https://github.com/Racchaellynnc/Angular-Website'>
+            <Github /></a>
+        </Modal.Description>
       </Modal>
 
 
