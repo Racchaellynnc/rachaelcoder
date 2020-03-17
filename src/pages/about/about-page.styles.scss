@@ -77,4 +77,26 @@
     .intro {
         left: -150px;
     }
+    .pic {
+        width: 800px;
+    }
+    .intro {
+        top: 118px;
+    }
+}
+@media screen and (max-width: 380px){
+
+    .pic {
+        width: 400px;
+    }
+    .intro {
+        top: 58px;
+        font-size: 18px;
+        left: -10px;
+    }
+    .name{
+        width: 150px;
+        height: 130px;
+        padding-top: 50px;
+    }
 }
