@@ -7,7 +7,7 @@ import { ReactComponent as CoderalityPhoto } from '../../assets/coderality.svg';
 import { ReactComponent as LwPhoto } from '../../assets/lw.svg';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as Website } from '../../assets/globe.svg';
-import { ReactComponent as Gita } from '../../assets/gita.svg';
+// import { ReactComponent as Gita } from '../../assets/gita.svg';
 import { ReactComponent as Cf } from '../../assets/cf.svg';
 import { Modal } from 'semantic-ui-react';
 
@@ -61,7 +61,7 @@ const ProjectPage = () => (
           </Modal.Description>
         </Modal.Content>
       </Modal>
-      <Modal trigger={<Gita className="project-image">Show Modal</Gita >}>
+      {/* <Modal trigger={<Gita className="project-image">Show Modal</Gita >}>
         <Modal.Header className='modal-header'> Glow in the Art </Modal.Header>
 
         <Modal.Description>
@@ -71,10 +71,10 @@ const ProjectPage = () => (
         </p>
           {/* <p> Want to see the Website? </p>
         <a className='website-icon' href='https://blackliteart.com/'> */}
-          {/* <Website  /> */}
-          {/* </a> */}
-        </Modal.Description>
-      </Modal>
+      {/* <Website  /> */}
+      {/* </a> */}
+      {/* </Modal.Description>
+      </Modal> */}
 
       <Modal trigger={<Cf className="project-image">Show Modal</Cf >}>
         <Modal.Header className='modal-header'> Casting Frontier </Modal.Header>
