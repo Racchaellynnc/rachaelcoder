@@ -13,7 +13,6 @@ const AboutPage = () => (
 					<BackgroundPhoto className="pic" />
 				</div>
 			</div>
-
 			<div className="text-name">
 				Rachael Coder
 			</div>
@@ -26,7 +25,6 @@ const AboutPage = () => (
 			</div>
 			<div class="card-title">
 				<div className="card-section">
-
 					<CardComponent />
 				</div>
 			</div>
