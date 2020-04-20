@@ -4,12 +4,30 @@ import { ReactComponent as VueCertification } from '../../assets/vue.svg';
 import { ReactComponent as FccRwd } from '../../assets/rwd.svg';
 import { ReactComponent as FccJs } from '../../assets/fccalgorithms.svg';
 import { ReactComponent as Unity } from '../../assets/unity.svg';
+import { ReactComponent as Gatsby } from '../../assets/gatsby.svg';
+import { ReactComponent as Website } from '../../assets/globe.svg';
 import './certifications.scss';
 
 const CertificationsPage = () => (
     <div className="photo-box">
         <div className="heading">Check out the certifications I've recieved</div>
         <div className="project">
+
+            <Modal trigger={<Gatsby className="project-image">Show Modal</Gatsby>}>
+                <Modal.Header className='modal-header'>Progressive Web Application</Modal.Header>
+                <Modal.Description>
+                    <p>
+                        In this Udemy course I made a Blog with Gatsby.JS, GraphQL, and React with WordPress. 
+                        I learned how to use markdown remark, create pages with Gatsby and Wordpress as a headless CMS, how to turn 
+                        an application into a PWA, and how make continuous deployments with Netlify Webhooks. 
+                    </p>
+                    <div className="icon-wrapper">
+                    	<a className='website-icon' href='https://zealous-tereshkova-e79c6c.netlify.app/'>
+						<Website />
+					</a>
+                    </div>
+                </Modal.Description>
+            </Modal>
 
             <Modal trigger={<FccRwd className="project-image">Show Modal</FccRwd>}>
                 <Modal.Header className='modal-header'>Responsive Web Design</Modal.Header>
