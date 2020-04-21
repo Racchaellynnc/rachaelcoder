@@ -27,10 +27,7 @@ const AboutPage = () => (
 					(React, Vue, and Angular) but I have learned so many other skills along the way. 
 
 				</div>
-				<div className="title-section">
-					I could write all of my skills but it would be too long. If you 
-					want to know more, please check out the projects and courses that I have taken. 
-				</div>	
+			
 					
 			
 			</div>
