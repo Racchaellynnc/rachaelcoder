@@ -8,12 +8,35 @@ import CertificationsPage from './pages/certifications/certifications'
 import Header from './components/header/header.jsx';
 import Footer from './components/footer/footer.jsx';
 import Work from './pages/workexperience/workexperience';
+import { useTheme } from './ThemeContext';
+import styled, { withTheme } from 'styled-components';
+import { buttonBackgroundColor, buttonTextColor } from './theme';
+import { ReactComponent as LightSvg} from '../src/assets/lightbulb.svg';
 
-class App extends React.Component {
-  render() {
-    return (
+function App (props) {
+const themeToggle = useTheme();
+
+  const Button = styled.button`
+    background: ${buttonBackgroundColor};
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: none;
+    color: ${buttonTextColor};
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  `;
+
+return (
       <div className="app">
         <Router>
+          <div className="button-wrapper">
+            <Button onClick={() => themeToggle.toggle()}><LightSvg className="svg" />
+              <div className="button-text">
+              {props.theme.mode === 'dark' ? "Light Mode" : "Dark Mode"}
+              </div>
+            </Button>
+          </div>
           <Header />
           <Switch>
             <Route exact path='/workexperience' component={Work} />
@@ -28,7 +51,7 @@ class App extends React.Component {
       </div>
     );
   }
-}
 
 
-export default App;
+
+export default withTheme(App);

@@ -9,35 +9,38 @@
     margin-bottom: 0px;
 }
 .text-name{
-    color: #133B50;
-    background-color: #4BA7B6;
     font-size: 37px;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
+    margin: 90px;
     font-family: 'Courier New', Courier, monospace;
+}
+.pic{
+margin: 3em;
 }
 
 .my-title {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: -10px;
     padding: 50px;
 }
 
 .title-section{
+    background-color: rgba(104, 173, 192, 0.452);
     font-size: 27px;
-    line-height: 27px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 30px;
-    margin: auto;
+    line-height: 33px;
+    width: 88%;
+    font-weight: 200;
+    margin-top: 30px;
     padding-left: 50px;
-    padding: 30px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 8px;
 }
 .card-title{
     width: 100%;
     padding: 30px;
-    
 }
 .card-section{
     width: 100%;
@@ -48,15 +51,14 @@
 }
 .section {
     width: 100%;
-    background-color: #4BA7B6;
-    color: white;
-
 }
 @media screen and (max-width: 800px){
     .title-section {
         padding-left: 0px;
         line-height: 27px;
         font-size:16px;
+        padding: 20px;
+        width: 100%;
     }
     .my-title{
         padding: 15px;
@@ -65,6 +67,9 @@
     font-size: 27px;
     padding: 15px;
     }
+    .pic{
+    margin: 0px;
+}
 }
 @media screen and (max-width: 380px){
     .intro {

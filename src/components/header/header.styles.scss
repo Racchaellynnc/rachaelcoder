@@ -3,8 +3,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
-    background-color:#2A1C34;
     text-align: center;
   
     .logo-container {
@@ -20,11 +18,9 @@
       text-decoration: none;
       font-size: 20px;
       font-weight: 300;
-      color: white;
 
       .option {
         padding: 10px 15px;
-        color:white;
         text-decoration: none;
         text-align: center;
       }
@@ -33,12 +29,14 @@
 
   @media screen and (max-width: 800px){
     .header .options .option{
-      color: #396e8f;
-      background-color: #2A1C33;
       width: 100%;
       padding: 35px;
       border: none;
       margin: 0;
+      font-size: 15px;
+  }
+    .options {
+    margin: 30px;
   }
 
 }
