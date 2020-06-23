@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a{
+ color: #50B0BD;
+}
+.app {
+    width: 100% !important;
+    margin: 0px;
+}
+.icons{
+  width: 20px;
+  margin-right: 12px;
+  margin-top: 5px;
+  color: #777;
+}
+button{
+  width: 77px;
+  height: 30px;
+  border-radius: 100px !important;
+}
+.svg{
+  width: 20px;
+  padding-top: 2px;
+  margin-right: 0px;
+}
+.nav-menu {
+  display: none;
+}
+.fad {
+color: #222222;
+padding: 5px;
+width: 10px;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(153, 153, 153, 0.111);
+  
+    .logo-container {
+      width: 70px;
+      padding: 25px;
+      margin-bottom: 100px;
+    }
+    .options {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 300;
+
+      .option {
+        padding-right: 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .options {
+      width: 100%;
+      display: none;
+        .option{
+          display: none;
+          padding-bottom: 20px;
+      }
+      .option, .icon {
+        display: none;
+      }
+    }
+    .icons {
+      color: #50B0BD;
+    }
+  }

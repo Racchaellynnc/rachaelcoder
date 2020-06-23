@@ -1,48 +1,49 @@
 import React from 'react';
 import './cards.styles.scss';
+import { Link } from 'react-router-dom';
 
 const CardComponent = () => (
-    <div class="ui cards">
-        <div class="card">
+    <div className="ui cards">
+        <div className="card">
             <div className="content">
                 <div className="header1">Work Experience</div>
-                <div class="description">
+                <div className="description">
                     Here is a detailed list of my Professional Work Experience as a Web Developer.
                 </div>
             </div>
-            <a href="/workexperience">
-                <div class="ui bottom attached button">
+            <Link to="/workexperience">
+                <div className="ui bottom attached button">
                     See more
                 </div>
-            </a>
+            </Link>
         </div>
 
-        <div class="card">
-            <div class="content">
-                <div class="header1">Projects</div>
-                <div class="description">
+        <div className="card">
+            <div className="content">
+                <div className="header1">Projects</div>
+                <div className="description">
                     I have been doing Freelance work for about 3 years now. Check out some of the things I have worked on.
                 </div>
             </div>
-            <a href="/projects">
-                <div class="ui bottom attached button">
+            <Link to="/projects">
+                <div className="ui bottom attached button">
                     See more
                 </div>
-            </a>
+            </Link>
         </div>
 
-        <div class="card">
-            <div class="content">
-                <div class="header1">Certifications</div>
-                <div class="description">
+        <div className="card">
+            <div className="content">
+                <div className="header1">Certifications</div>
+                <div className="description">
                     Here you can see that I have completed multiple courses that have taught me complex topics.
                 </div>
             </div>
-            <a href="/certifications">
-                <div class="ui bottom attached button">
+            <Link to="/certifications">
+                <div className="ui bottom attached button">
                     See more
                 </div>
-            </a>
+            </Link>
         </div>
     </div>
 )

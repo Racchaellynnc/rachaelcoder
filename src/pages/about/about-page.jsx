@@ -6,16 +6,16 @@ import CardComponent from '../../components/cards/cards';
 
 
 const AboutPage = () => (
-	<div class="">
-		<div class="">
-			<div class="">
+	<div className="">
+		<div className="">
+			<div className="">
 				<div className="pic-container">
 					<BackgroundPhoto className="pic" />
 				</div>
 			</div>
 		</div>	
 		<div className="section">		
-			<div class="my-title">
+			<div className="my-title">
 				<div className="text-name">
 						Rachael Coder
 				</div>
@@ -25,7 +25,7 @@ const AboutPage = () => (
 					(React, Vue, and Angular) but I have learned so many other skills along the way. 
 				</div>	
 			</div>
-			<div class="card-title">
+			<div className="card-title">
 				<div className="card-section">
 					<CardComponent />
 				</div>

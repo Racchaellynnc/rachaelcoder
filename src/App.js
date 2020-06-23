@@ -1,43 +1,83 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutPage from './pages/about/about-page.jsx';
 import ContactMePage from './pages/contact/contact';
 import ProjectsPage from './pages/projects/projects';
 import CertificationsPage from './pages/certifications/certifications'
-import Header from './components/header/header.jsx';
 import Footer from './components/footer/footer.jsx';
 import Work from './pages/workexperience/workexperience';
 import { useTheme } from './ThemeContext';
 import styled, { withTheme } from 'styled-components';
-import { buttonBackgroundColor, buttonTextColor } from './theme';
+import { buttonBackgroundColor, buttonTextColor, backgroundColor } from './theme';
 import { ReactComponent as LightSvg} from '../src/assets/lightbulb.svg';
+import { ReactComponent as Projects} from '../src/assets/code-light.svg';
+import { ReactComponent as About} from '../src/assets/user.svg';
+import { ReactComponent as Contact} from '../src/assets/envelope.svg';
+import { ReactComponent as MenuIcon} from '../src/assets/menubar.svg';
 
-function App (props) {
+function App ({theme}) {
 const themeToggle = useTheme();
-
+  console.log(theme)
   const Button = styled.button`
     background: ${buttonBackgroundColor};
-    border: none;
+    border: 2px solid #1a1a1a56;
     border-radius: 0.3em;
     box-shadow: none;
     color: ${buttonTextColor};
     cursor: pointer;
     font-size: 1em;
-    padding: 0.5em 1em;
+    position: relative;
+    padding-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 90px;
+    outline: none !important;
+    box-shadow: 0px 0px 11px 2px rgba(57, 110, 143, 0.471);
+      @media screen and (max-width: 800px){
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+  `;
+ const Slider = styled.button`
+    background: ${backgroundColor};
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: ${theme.slide === 'on' ? '-39px' : '36px'};
+    transition: 300ms ease margin;
+    top: 10px;
+    border-radius: 50%;
+    box-shadow: none;
+    color: ${buttonTextColor};
+    cursor: pointer;
+    padding: 0.2em 0.2em;
+    outline: none !important;
+    box-shadow: none;
+      @media screen and (max-width: 800px){
+        margin-right: 2px;
+      }
   `;
 
 return (
       <div className="app">
         <Router>
-          <div className="button-wrapper">
-            <Button onClick={() => themeToggle.toggle()}><LightSvg className="svg" />
-              <div className="button-text">
-              {props.theme.mode === 'dark' ? "Light Mode" : "Dark Mode"}
+            <div className='header' >
+              <div className='options'>
+                <MenuIcon className='nav-menu' />
+                <Button className='button' onClick={() => themeToggle.toggle()}>
+                  <Slider className="switch-slider" >  
+                    <div className="button-text">
+                  <LightSvg className="svg"/>
+                </div>
+              </Slider>
+            </Button> 
+                <Link to='/about' className="option" ><About className="icons" />About Me</Link>
+                <Link to='/projects' className="option" ><Projects className="icons"/>My Projects</Link>
+                <Link to='/contactme' className="option" ><Contact className='icons' />Contact Me</Link>
+               </div> 
               </div>
-            </Button>
-          </div>
-          <Header />
           <Switch>
             <Route exact path='/workexperience' component={Work} />
             <Route exact path='/' component={AboutPage} />
