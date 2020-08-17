@@ -4,18 +4,17 @@
     line-height: 1;
     margin: auto;
     width: 60%;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 77px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .box {
     background-color: #396E8F;
-    width: 40%;
+    width: 55%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 24px;
+    border-radius: 4px;
     margin-bottom: 77px;
     padding: 22px;
 }
@@ -23,12 +22,16 @@
 input{
     width: 100%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
-    border-radius: 22px;
+    border-radius: 4px;
     padding: 12px;
+    background-color: rgb(248, 248, 248);
+    outline: none;
     border: none;
+}
+
+form {
+    width: 100%;
 }
 
 .submit{

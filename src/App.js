@@ -1,25 +1,19 @@
 import React from 'react';
 import './App.scss';
-import { Link } from 'react-router-dom';
+import Header from './components/header/header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutPage from './pages/about/about-page.jsx';
 import ContactMePage from './pages/contact/contact';
-import ProjectsPage from './pages/projects/projects';
-import CertificationsPage from './pages/certifications/certifications'
+import ProjectPage from './pages/projects/projects';
 import Footer from './components/footer/footer.jsx';
 import Work from './pages/workexperience/workexperience';
 import { useTheme } from './ThemeContext';
 import styled, { withTheme } from 'styled-components';
 import { buttonBackgroundColor, buttonTextColor, backgroundColor } from './theme';
 import { ReactComponent as LightSvg} from '../src/assets/lightbulb.svg';
-import { ReactComponent as Projects} from '../src/assets/code-light.svg';
-import { ReactComponent as About} from '../src/assets/user.svg';
-import { ReactComponent as Contact} from '../src/assets/envelope.svg';
-import { ReactComponent as MenuIcon} from '../src/assets/menubar.svg';
 
 function App ({theme}) {
 const themeToggle = useTheme();
-  console.log(theme)
   const Button = styled.button`
     background: ${buttonBackgroundColor};
     border: 2px solid #1a1a1a56;
@@ -31,9 +25,7 @@ const themeToggle = useTheme();
     position: relative;
     padding-bottom: 30px;
     margin-right: 20px;
-    margin-left: 90px;
     outline: none !important;
-    box-shadow: 0px 0px 11px 2px rgba(57, 110, 143, 0.471);
       @media screen and (max-width: 800px){
         margin-bottom: 20px;
         margin-left: 0px;
@@ -43,9 +35,9 @@ const themeToggle = useTheme();
  const Slider = styled.button`
     background: ${backgroundColor};
     width: 30px;
-    height: 30px;
+    height: 29px;
     border: none;
-    margin-left: ${theme.slide === 'on' ? '-39px' : '36px'};
+    margin-left: ${theme.slide === 'on' ? '-27px' : '24px'};
     transition: 300ms ease margin;
     top: 10px;
     border-radius: 50%;
@@ -64,26 +56,22 @@ return (
       <div className="app">
         <Router>
             <div className='header' >
+            <Header />
               <div className='options'>
-                <MenuIcon className='nav-menu' />
                 <Button className='button' onClick={() => themeToggle.toggle()}>
                   <Slider className="switch-slider" >  
                     <div className="button-text">
-                  <LightSvg className="svg"/>
-                </div>
-              </Slider>
-            </Button> 
-                <Link to='/about' className="option" ><About className="icons" />About Me</Link>
-                <Link to='/projects' className="option" ><Projects className="icons"/>My Projects</Link>
-                <Link to='/contactme' className="option" ><Contact className='icons' />Contact Me</Link>
+                      <LightSvg className="svg"/>
+                    </div>
+                  </Slider>
+                </Button>  
                </div> 
               </div>
           <Switch>
             <Route exact path='/workexperience' component={Work} />
             <Route exact path='/' component={AboutPage} />
-            <Route exact path='/certifications' component={CertificationsPage} />
             <Route exact path='/about' component={AboutPage} />
-            <Route exact path='/projects' component={ProjectsPage} />
+            <Route exact path='/projects' component={ProjectPage} />
             <Route path='/contactme' component={ContactMePage} />
           </Switch>
           <Footer />

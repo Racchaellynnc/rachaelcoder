@@ -1,13 +1,9 @@
 import React from 'react';
 import './projects.styles.scss';
-// import { ReactComponent as Photo} from '../../assets/comp.svg';
-import { ReactComponent as RecipePhoto } from '../../assets/recipesite.svg';
-import { ReactComponent as CcPhoto } from '../../assets/cc.svg';
 import { ReactComponent as CoderalityPhoto } from '../../assets/coderality.svg';
 import { ReactComponent as LwPhoto } from '../../assets/lw.svg';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as Website } from '../../assets/globe.svg';
-// import { ReactComponent as Gita } from '../../assets/gita.svg';
 import { ReactComponent as Cf } from '../../assets/cf.svg';
 import { Modal } from 'semantic-ui-react';
 
@@ -55,20 +51,6 @@ const ProjectPage = () => (
 					</Modal.Description>
 				</Modal.Content>
 			</Modal>
-
-			{/* <Modal trigger={<Gita className="project-image">Show Modal</Gita >}>
-        <Modal.Header className='modal-header'> Glow in the Art </Modal.Header>
-        	<Modal.Description>
-          		<p>
-            		This is a freelance project that I built to display art collections. It is using Vue.js, Mongo.DB, Axios, Vuex, and bulma.
-        		</p>
-    {/* 		<p> Want to see the Website? </p>
-        		<a className='website-icon' href=''> */}
-			{/* 			<Website  /> */}
-			{/* 		</a> */}
-			{/* 	</Modal.Description>
-      	</Modal> */}
-
 			<Modal trigger={<Cf className="project-image">Show Modal</Cf >}>
 				<Modal.Header className='modal-header'> Casting Frontier </Modal.Header>
 				<Modal.Content image>
@@ -78,32 +60,6 @@ const ProjectPage = () => (
 					</p>
 					</Modal.Description>
 				</Modal.Content>
-			</Modal>
-
-			<Modal trigger={<RecipePhoto className="project-image">Show Modal</RecipePhoto>}>
-				<Modal.Header className='modal-header'>Recipe Search </Modal.Header>
-				<Modal.Description>
-					<p>
-						I made this project during my freelance work in 2017 using a Recipe API. I designed the layout using CSS grids and React.
-        		</p>
-					<p> Want to see the Code? </p>
-					<a href='https://github.com/Racchaellynnc/react-recipe-app'>
-						<Github />
-					</a>
-				</Modal.Description>
-			</Modal>
-
-			<Modal trigger={<CcPhoto className="project-image">Show Modal</CcPhoto>}>
-				<Modal.Header className='modal-header'>Captivating Clicks </Modal.Header>
-				<Modal.Description>
-					<p>
-						I made this project while I was a freelancer using Angular 2. I made the Front-End using CSS grids, MaterialUI and Angular. The Back-End consists of Firebase, Node, and MongoDB. I used Google Cloud Functions to implement the photo uploading feature where it stores users and comments in MongoDB.
-        		</p>
-					<p> Want to see the Code? </p>
-					<a href='https://github.com/Racchaellynnc/Angular-Website'>
-						<Github />
-					</a>
-				</Modal.Description>
 			</Modal>
 		</div>
 	</div>

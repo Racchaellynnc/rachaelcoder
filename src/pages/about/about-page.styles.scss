@@ -1,102 +1,59 @@
 
-.ui.grid>.row {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
+.career{
+    padding-top: 30px;
+    font-size: 22px;
 }
-.ui[class*="vertically divided"].grid>.row>.column {
-    margin-top: 0px;
-    margin-bottom: 0px;
+.wrapper {
+    margin: 0px;
+    width: 100%;
 }
-.text-name{
-    font-size: 37px;
-    font-weight: 300;
-    text-align: center;
-    margin: 90px;
-    font-family: 'Courier New', Courier, monospace;
+.pic-container{
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 222px;
 }
-.pic{
-margin: 3em;
+.name-svg{
+    width: 70%;
 }
-
-.my-title {
+.about-me {
     display: flex;
     flex-direction: column;
+    height: 200vh;
     width: 100%;
-    padding: 50px;
-}
-
-.title-section{
-    background-color: rgba(104, 173, 192, 0.164);
-    font-size: 27px;
-    line-height: 33px;
-    width: 88%;
-    font-weight: 200;
-    margin-top: 30px;
-    padding-left: 50px;
-    padding: 50px;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 4px;
 }
-.card-title{
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+
+  }
+  .parallax-container {
+    position: relative;
     width: 100%;
-    padding: 30px;
-}
-.card-section{
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 8px;
+    perspective-origin: 0%;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
-}
-.section {
-    width: 100%;
-}
+  }
 @media screen and (max-width: 800px){
-    .title-section {
-        padding-left: 0px;
-        line-height: 27px;
-        font-size:16px;
+    .career{
         padding: 20px;
-        width: 100%;
-    }
-    .my-title{
-        padding: 15px;
-    }
-    .text-name{
-    font-size: 27px;
-    padding: 15px;
+        font-size: 22px;
     }
     .pic{
     display: none;
-}
-}
-@media screen and (max-width: 380px){
-    .intro {
-        top: 68px;
-        font-size: 18px;
-        left: -10px;
     }
-    .name{
-        width: 100px;
-        padding-top: 25px;
-    }
-    .ui.grid>.row {
-        padding-top: 14px;
+    .pic-container{
+        height: 700px;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        margin-top: 300px;
     }
 }
-@media screen and (max-width: 420px){
-    .intro {
-        top: 58px;
-        font-size: 18px;
-        left: -20px;
-    }
-    .name{
-        width: 100px;
-        height: 90px;
-        padding-top: 25px;
-    }
-    .ui.grid>.row {
-        padding-top: 14px;
-    }
-}
+

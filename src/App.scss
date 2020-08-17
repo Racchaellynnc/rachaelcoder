@@ -16,7 +16,7 @@ a{
   color: #777;
 }
 button{
-  width: 77px;
+  width: 65px;
   height: 30px;
   border-radius: 100px !important;
 }
@@ -26,7 +26,7 @@ button{
   margin-right: 0px;
 }
 .nav-menu {
-  display: none;
+  display: flex;
 }
 .fad {
 color: #222222;
@@ -40,7 +40,6 @@ width: 10px;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: rgba(153, 153, 153, 0.111);
   
     .logo-container {
       width: 70px;
