@@ -4,10 +4,25 @@ import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
 import { ReactComponent as Github } from '../../assets/githubicon.svg';
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
 import { ReactComponent as Facebook } from '../../assets/facebook.svg';
+import styled from 'styled-components';
+import { FooterColor} from '../../theme';
+
+const Footers = styled.div`
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+background: ${FooterColor};
+text-align: center;
+justify-content: center;
+margin: auto;
+color: rgb(255, 255, 255);
+padding-top: 10px;
+`;
+
 const Footer = () => (
-    <div className='footer'>
+    <Footers>
         <div className='text-area'>
-            Find me on Social Media
+            Follow me on Social Media
         </div>
         <div>
             <a href="https://www.linkedin.com/in/rachael-coder-378b1170/" > <LinkedIn className="icon" /></a>
@@ -16,9 +31,9 @@ const Footer = () => (
             <a href="https://twitter.com/Rachaelcoder" > <Twitter className="icon" /></a>
         </div>
         <div className="text-area2">
-            If you would like to know more, contact me and I will be sure to respond asap. :)
+            rachycodes@gmail.com
         </div>
-    </div>
+    </Footers>
 );
 
 export default Footer;

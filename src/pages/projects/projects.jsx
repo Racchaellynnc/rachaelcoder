@@ -12,7 +12,10 @@ const ProjectPage = () => (
 	<div className="photo-box">
 		<div className="heading">
 			Check out the projects I've worked on
-	</div>
+			<div className="heading-tip">
+				(Click on the pictures for more detail)
+			</div>
+		</div>
 		<div className="project">
 			<Modal trigger={<CoderalityPhoto className="project-image">Show Modal</CoderalityPhoto>}>
 				<Modal.Header className='modal-header'>Coderality</Modal.Header>

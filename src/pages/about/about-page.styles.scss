@@ -10,7 +10,7 @@
     width: 100%;
 }
 .pic-container{
-    height: 100vh;
+    height: 65vh;
     width: 50%;
     margin: auto;
     justify-content: center;
@@ -18,6 +18,14 @@
 }
 .name-svg{
     width: 70%;
+}
+.skills-container{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 150px;
 }
 .about-me {
     display: flex;
@@ -51,8 +59,8 @@
     display: none;
     }
     .pic-container{
-        height: 700px;
-        width: 90%;
+        height: 55vh;
+        width: 95%;
         margin: auto;
         justify-content: center;
         margin-top: 300px;

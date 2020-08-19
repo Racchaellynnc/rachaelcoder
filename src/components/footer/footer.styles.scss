@@ -1,12 +1,4 @@
-.footer {
-    width: 100%;
-    display: flex;
-    background-color: #1a1a1a;
-    text-align: center;
-    margin-right: 20px;
-    color: rgb(255, 255, 255);
-    padding-top: 10px;
-}
+
 
 .icon {
     color: rgb(255, 255, 255);
@@ -15,14 +7,14 @@
 }
 
 .text-area {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 200;
     padding: 20px;
     line-height: 27px;
 }
 
 .text-area2 {
-    font-size: 14px;
+    font-size: 27px;
     font-weight: 200;
     padding: 20px;
     line-height: 27px;
@@ -33,9 +25,15 @@
 @media screen and (max-width: 800px){
 .text-area{
     line-height: 44px;
+    width: 50%;
+    font-size: 22px;
 }
 .text-area2{
     line-height: 44px;
+    width: 50%;
+    margin: auto;
+    padding: 0px;
+    font-size: 22px;
 }
 .footer {
     padding-top: 27px;
