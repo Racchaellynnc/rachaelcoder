@@ -11,12 +11,16 @@ body {
 }
 
 .website-icon{
-	width:30px;
-	margin: 40px;
+	width: 30px;
+	padding-bottom: 50px;
+	text-align: center;
 }
 .heading {
+	margin-top: 177px;
+	margin-bottom: 27px;
 	font-size: 28px;
-    font-weight: 300;
+    font-weight: 222;
+    line-height: 55px;
     padding-bottom: 100px;
     padding-top: 40px;
 	text-align: center;
@@ -43,7 +47,13 @@ p{
 	margin: -1rem -1rem;
 	padding: 20px;
 }
-
+.modal-description{
+	flex: 1 10 auto;
+	width: 100%;
+}
+.ui.modal>.content>.description{
+	flex: 1 10 auto;
+}
 .project-item {
 	flex: 1 0 24rem;
 	margin: 1rem;
@@ -75,3 +85,9 @@ p{
 		margin: 0;
 	}
 }
+
+@media screen and (max-width: 800px){
+	.project {
+		height: 777px;
+		}
+	} 

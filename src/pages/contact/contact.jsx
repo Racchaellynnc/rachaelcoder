@@ -1,20 +1,37 @@
 import React from 'react';
 import './contact.styles.scss';
+import {ReactComponent as Smile } from '../../assets/smile.svg';
+import styled from 'styled-components';
+import { ContactBox } from '../../theme';
+
+
+const Contact = styled.div`
+width: 55%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+border-radius: 4px;
+margin-bottom: 77px;
+padding: 22px;
+background-color: ${ContactBox};
+
+`;
 
 const ContactMePage = () => (
 	<div className='landing-page'>
 		<div class="contact-box">
-			If you want to code with me in the future, please reach out. I would love to hear your feedback. Thank you for your time spent viewing my page!
+			If you want to code with me in the future, please reach out to me! <br></br>Thank you for taking the time to view my page.
+			<Smile className="smile"/> 
     	</div>
-		<div className='box'>
+		<Contact className='box'>
 			<form action="https://getsimpleform.com/messages?form_api_token=d7680d69dbae30f3e9e59b01e6982cb0" method="post">
 				<input type='hidden' name='https://coderality.com/' value='https://coderality.com/' />
 				<input type='text' placeholder='Your Name'></input>
 				<input type='email' placeholder='Your Email'></input>
-				<input className='comments' type='text' placeholder='Comments are appreciated :)'></input>
+				<input className='comments' type='text' placeholder='Your Message'></input>
 				<input className='submit' type='submit' value='Submit' />
 			</form>
-		</div>
+		</Contact>
 	</div>
 );
 

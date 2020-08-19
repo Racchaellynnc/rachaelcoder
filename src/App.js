@@ -48,7 +48,8 @@ const themeToggle = useTheme();
     outline: none !important;
     box-shadow: none;
       @media screen and (max-width: 800px){
-        margin-right: 2px;
+        margin-left: ${theme.slide === 'on' ? '-27px' : '23px'};
+        margin-top: 0.5px;
       }
   `;
 

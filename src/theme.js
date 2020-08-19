@@ -34,7 +34,13 @@ export const aboutMeBoxes = theme('mode', {
   light: '#C3F2F7',
   dark: '#061C26'
 });
+
 export const aboutMeBoxesText = theme('mode', {
   light: '#111',
   dark: '#999'
+});
+
+export const ContactBox = theme('mode', {
+  light: '#97c5c9',
+  dark: '#142933'
 });

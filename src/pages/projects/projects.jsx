@@ -16,18 +16,23 @@ const ProjectPage = () => (
 		<div className="project">
 			<Modal trigger={<CoderalityPhoto className="project-image">Show Modal</CoderalityPhoto>}>
 				<Modal.Header className='modal-header'>Coderality</Modal.Header>
-				<Modal.Description>
-					<p>
-						I made an e-commerce store that sells Programming Tutorials using React, Redux, Hooks, GraphQL, StripeAPI, and Firebase. .
-          		</p>
-					<p> Want to see the Code or the Website? </p>
-					<a href='https://github.com/Racchaellynnc/coding-store'>
-						<Github />
-					</a>
-					<a className='website-icon' href='https://coderality.com/'>
-						<Website />
-					</a>
-				</Modal.Description>
+				<Modal.Content image>
+					<Modal.Description>
+						<p>
+							I made an e-commerce store that sells Programming T-Shirts and a Tech Blog. This website was built using React, 
+							Redux, Hooks, HOC, Node.JS GraphQL, StripeAPI, ContextAPI, GoogleMapsAPI and Firebase. This is a personal project of mine and was designed 
+							and built 100% by myself. I used Adobe XD to design mock-ups and Adobe Illustrator to design the logo, graphics and 
+							svg images. I also integrated React Helmet to enable SEO into the webpages. 
+						</p>
+						<p> Want to see the Code or the Website? </p>
+						<a className='website-icon' href='https://github.com/Racchaellynnc/coding-store'>
+							<Github />
+						</a>
+						<a className='website-icon' href='https://coderality.com/'>
+							<Website />
+						</a>
+					</Modal.Description>
+				</Modal.Content>
 			</Modal>
 
 			<Modal trigger={<LwPhoto className="project-image">Show Modal</LwPhoto>}>
@@ -43,7 +48,7 @@ const ProjectPage = () => (
 							maintaining codebase. I Gained experience with Firebase,
 							Google Cloud, Github, Bitbucket, Jira and Asana. I worked
 							in an Agile environment.
-				</p>
+						</p>
 						<p> Want to see the Website? </p>
 						<a className='website-icon' href='https://www.lavishweb.com/'>
 							<Website />
@@ -55,9 +60,14 @@ const ProjectPage = () => (
 				<Modal.Header className='modal-header'> Casting Frontier </Modal.Header>
 				<Modal.Content image>
 					<Modal.Description>
-						<p>
-							This is a freelance project that I worked on using Vue, Axios, and foundations.
-					</p>
+						<p className="modal-description">
+							This is a freelance project that I worked on in March of 2020. The tech stack included 
+							Vue, Vue-Router, JavaScript, Node, ESlint, Axios, Sass, and foundation for the UI.
+							I built a few components for a table that was being used in their project. I built 
+							the table itself, a card scroller (to view the table on mobile devices), pagination, 
+							the responsive menu, a project search bar, and a sort select filter.
+						</p>	
+						
 					</Modal.Description>
 				</Modal.Content>
 			</Modal>

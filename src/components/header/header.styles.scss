@@ -1,5 +1,5 @@
 // Colors
-$color-primary: #116b77;
+$color-primary: #50B0BD;
 $color-secondary: #555;
 $color-border: #50b0bd;
 
@@ -30,6 +30,12 @@ a {
   font-size: 18px;
 }
 
+
+@media screen and (max-width: $medium) {
+  .navigation {
+    font-size: 14px;
+  }
+}
 .menu {
   display: flex;
   padding-left: 0;
@@ -39,17 +45,7 @@ a {
   display: inline-block;
 	white-space: nowrap;
 
-  @media screen and (max-width: $small) {
-    @include hide-menu-items(2);
-  }
 
-  @media screen and (max-width: $medium) {
-    @include hide-menu-items(3);
-  }
-
-  @media screen and (max-width: $large) {
-    @include hide-menu-items(4);
-  }
 
   &:last-child .menu__link {
     border-right: 0;
@@ -60,7 +56,9 @@ a {
   display: block;
   padding: 6px 30px 3px;
   border-right: 2px dotted $color-border;
-
+  @media screen and (max-width: $medium) {
+    padding: 6px 10px 3px;
+  }
   &:hover,
   &:focus {
     .menu__first-word {
@@ -72,9 +70,7 @@ a {
     }
   }
 
-  @media screen and (min-width: $medium) {
-    padding: 6px 40px 3px;
-  }
+
 }
 
 .menu__title {
