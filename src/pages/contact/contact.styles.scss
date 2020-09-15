@@ -1,8 +1,9 @@
 .contact-box{
     font-size: 28px;
-    font-weight: 222;
     line-height: 55px;
     margin: auto;
+    font-weight: 300;
+    margin-bottom: 100px;
     width: 77%;
     text-align: center;
     padding-top: 200px;
@@ -50,7 +51,6 @@ form {
 @media screen and (max-width: 1050px) {
 .contact-box {
     font-size: 22px;
-    font-weight: 200;
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -73,7 +73,6 @@ input {
 @media screen and (max-width: 400px) {
     .contact-box {
         font-size: 22px;
-        font-weight: 200;
         padding: 20px;
         margin-top: 100px;
         margin-bottom: 100px;

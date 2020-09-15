@@ -20,7 +20,7 @@ background-color: ${ContactBox};
 const ContactMePage = () => (
 	<div className='landing-page'>
 		<div class="contact-box">
-			If you want to code with me in the future, please reach out to me! <br></br>Thank you for taking the time to view my page.
+			If you want to code with me in the future or if you need help developing or designing a website, please reach out to me by filling out the form below. I love meeting new people and helping where ever I can.<br></br>Thank you for taking the time to view my page.
 			<Smile className="smile"/> 
     	</div>
 		<Contact className='box'>

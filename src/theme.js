@@ -7,9 +7,18 @@ export const backgroundColor = theme('mode', {
 
 export const textColor = theme('mode', {
   light: '#444',
-  dark: '#d3e7ea'
+  dark: '#666'
 });
 
+export const HeadingFirstWord = theme('mode', {
+  light: '#51b1bd',
+  dark: '#50B0BD'
+});
+
+export const HeadingSecondWord = theme('mode', {
+  light: '#444',
+  dark: '#999'
+});
 export const buttonBackgroundColor = theme('mode', {
   light: '#4f4f4f',
   dark: '#dbfaff'
@@ -76,6 +85,26 @@ export const SkillsWhiteText = theme('mode', {
 });
 
 export const FooterColor = theme('mode', {
-  light: 'linear-gradient(to right, #50B0BD 20%, #999 80%); ',
-  dark: 'linear-gradient(to right, #0A2737 20%, #222 80%); '
+  light: 'linear-gradient(to right, #50B0BDa2 20%, #50B0BDa2 80%); ',
+  dark: 'linear-gradient(to right, #0A2737a2 20%, #03464fa2 80%); '
+});
+
+export const FooterText = theme('mode', {
+  light: '#111 ',
+  dark: '#999'
+});
+
+export const FooterSmallText = theme('mode', {
+  light: '#111',
+  dark: '#888'
+});
+
+export const SvgStroke = theme('mode', {
+  light: '#444',
+  dark: '#50B0BD'
+});
+
+export const SvgFill = theme('mode', {
+  light: '#50B0BD',
+  dark: '#222'
 });

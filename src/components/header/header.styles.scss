@@ -1,13 +1,6 @@
-// Colors
 $color-primary: #50B0BD;
-$color-secondary: #555;
+$color-secondary: #666;
 $color-border: #50b0bd;
-
-// Media Queries breakpoints
-$small: 480px;
-$medium: 768px;
-$large: 992px;
-$x-large: 1200px;
 
 @mixin hide-menu-items($index) {
   &:nth-child(n + #{$index + 1}) {
@@ -28,58 +21,50 @@ a {
   width: 100%;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 18px;
-}
-
-
-@media screen and (max-width: $medium) {
-  .navigation {
+  @media screen and (max-width: 800) {
     font-size: 14px;
   }
 }
+
 .menu {
   display: flex;
   padding-left: 0;
 }
 
-.menu__item {
+.menu-item {
   display: inline-block;
 	white-space: nowrap;
 
 
 
-  &:last-child .menu__link {
+  &:last-child .menu-link {
     border-right: 0;
   }
 }
 
-.menu__link {
+.menu-link {
   display: block;
   padding: 6px 30px 3px;
   border-right: 2px dotted $color-border;
-  @media screen and (max-width: $medium) {
-    padding: 6px 10px 3px;
-  }
   &:hover,
   &:focus {
-    .menu__first-word {
+    .menu-first-word {
       transform: translate3d(0, -105%, 0);
     }
 
-    .menu__second-word {
+    .menu-second-word {
       transform: translate3d(0, 105%, 0);
     }
   }
-
-
 }
 
-.menu__title {
+.menu-title {
   display: inline-block;
   overflow: hidden;
 }
 
-.menu__first-word,
-.menu__second-word {
+.menu-first-word,
+.menu-second-word {
   display: inline-block;
   position: relative;
   transition: transform .6s;
@@ -90,7 +75,7 @@ a {
   }
 }
 
-.menu__first-word {
+.menu-first-word {
   color: $color-primary;
 
   &::before {
@@ -99,11 +84,21 @@ a {
   }
 }
 
-.menu__second-word {
+.menu-second-word {
   color: $color-secondary;
 
   &::before {
     bottom: 105%;
     color: $color-primary;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .navigation{
+    font-size: 14px;
+  }
+  .menu-link{
+      padding: 6px 10px 3px;
   }
 }

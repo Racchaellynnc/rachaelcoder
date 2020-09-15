@@ -7,82 +7,16 @@ import { SkillsBlue, SkillsGray, SkillsWhite, SkillsWhiteText, SkillsBlueText, S
 const Blue = styled.div`
 background: ${SkillsBlue};
 color: ${SkillsBlueText};
-border-radius: 22px;
-font-size: 16px;
-font-weight: 300;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 22px;
-padding-right: 22px;
-margin: 15px;
-transition: 0.5s;
-transition-timing-function: ease-in-out;
-:hover{
-	background: linear-gradient(to right, #50B0BD 20%, #999 80%); 
-	padding-left: 28px;
-	padding-right: 28px;
-	transition: 0.5s;
-	color: #222;
-	transition-timing-function: ease-in-out;
-}
-@media screen and (max-width: 800px){
-	font-size: 14px;
-	margin: 10px;
-}
 `;
 
 const White = styled.div`
 background-color: ${SkillsWhite};
 color: ${SkillsWhiteText};
-font-size: 16px;
-font-weight: 300;
-border-radius: 22px;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 22px;
-padding-right: 22px;
-margin: 15px;
-transition: 0.5s;
-transition-timing-function: ease-in-out;
-	:hover{
-		background: linear-gradient(to right, #50B0BD 20%, #999 80%); 
-		padding-left: 28px;
-		padding-right: 28px;
-		transition: 0.2s;
-		color: #222;
-		transition-timing-function: ease-in-out;
-	}
-	@media screen and (max-width: 800px){
-		font-size: 14px;
-		margin: 10px;
-	}
 `;
 
 const Gray = styled.div`
 background-color: ${SkillsGray};
 color: ${SkillsGrayText};
-font-size: 16px;
-font-weight: 300;
-border-radius: 22px;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 22px;
-padding-right: 22px;
-margin: 15px;
-transition: 0.5s;
-transition-timing-function: ease-in-out;
-:hover{
-	background: linear-gradient(to right, #50B0BD 20%, #999 80%); 
-	color: #222;
-	padding-left: 28px;
-	padding-right: 28px;
-	transition: 0.2s;
-	transition-timing-function: ease-in-out;
-}
-@media screen and (max-width: 800px){
-	font-size: 14px;
-	margin: 10px;
-}
 `;
 
 const AboutPage = () => (
@@ -90,89 +24,103 @@ const AboutPage = () => (
 		<div className="pic-container">
 			<NameSvg className="name-svg" />
 			<div className="career">
-				Full Stack Web Developer // UX/UI Designer 
+				Full Stack Web Developer 
 			</div>
 		</div>
 		<div className="skills-container">
-			<Blue>
+			<Blue className="skills">
 				JavaScript
 			</Blue>
-			<White>
+			<White className="skills">
 				React
 			</White>
-			<Gray>
+			<Gray className="skills">
 				React Hooks
 			</Gray>
-			<Blue>
+			<Blue className="skills">
 				Redux
 			</Blue>
-			<Blue>
+			<Gray className="skills">
+				React Native
+			</Gray>
+			<Blue className="skills">
 				Vue
 			</Blue>
-			<White>
-				Vue-Router
-			</White>
-			<White>
+			<White className="skills">
 				Angular
 			</White>
-			<White>
+			<Blue className="skills">
+				Python
+			</Blue>
+			<White className="skills">
 				TypeScript
 			</White>
-			<Gray>
+			<Blue className="skills">
+				SEO
+			</Blue>
+			<White className="skills">
+				Jest
+			</White>
+			<Gray className="skills">
 				Node
 			</Gray>
-			<Blue>
+			<Blue className="skills">
 				MongoDB
 			</Blue>
-			<Blue>
+			<Blue className="skills">
 				MySQL
 			</Blue>
-			<Gray>
+			<Gray className="skills">
 				GraphQL
 			</Gray>
-			<Blue>
+			<Blue className="skills">
 				CSS3
 			</Blue>
-			<White>
+			<White className="skills">
 				SCSS
 			</White>
-			<Gray>
+			<Gray className="skills">
 				HTML5
 			</Gray>
-			<Blue>
+			<Blue className="skills">
 				JQuery
 			</Blue>
-			<White>
+			<White className="skills">
 				GCP
 			</White>
-			<White>
+			<Blue className="skills">
+				C#
+			</Blue>
+			<White className="skills">
 				AWS
 			</White>
-			<White>
+			<Gray className="skills">
+				Serverless
+			</Gray>
+			<White className="skills">
 				Wordpress
 			</White>
-			<Gray>
+			<Gray className="skills">
 				PHP
 			</Gray>
-			<Gray>
-				CMS
-			</Gray>
-			<Blue>
+			<Blue className="skills">
 				Adobe XD
 			</Blue>
-			<White>
+			<White className="skills">
 				Sketch
 			</White>
-			<Gray>
+			<Gray className="skills">
 				InDesign
 			</Gray>
-			<Gray>
+			<Blue className="skills">
+				After Effects	
+			</Blue>
+			<Gray className="skills">
 				Photoshop
 			</Gray>
-			<White>
+			<White className="skills">
 				Illustrator
 			</White>
-			
 		</div>
 	</div>
 	

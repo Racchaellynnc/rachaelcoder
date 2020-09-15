@@ -6,39 +6,39 @@ const Header = () => (
   <div className='header'>
     <nav class="navigation">
       <ul class="menu">
-        <li class="menu__item">
-          <Link to='/about' class="menu__link">
-            <span class="menu__title">
-              <span class="menu__first-word" data-hover="About">
+        <li class="menu-item">
+          <Link to='/about' class="menu-link">
+            <span class="menu-title">
+              <span class="menu-first-word" data-hover="About">
                 About&nbsp; 
               </span>
-              <span class="menu__second-word" data-hover="Me">
+              <span class="menu-second-word" data-hover="Me">
                 Me
               </span>
             </span>
           </Link>
         </li>
 
-        <li class="menu__item">
-          <Link to='/projects' class="menu__link">
-            <span class="menu__title">
-              <span class="menu__first-word" data-hover="My">
+        <li class="menu-item">
+          <Link to='/projects' class="menu-link">
+            <span class="menu-title">
+              <span class="menu-first-word" data-hover="My">
                 My&nbsp; 
               </span>
-              <span class="menu__second-word" data-hover="Projects ">
+              <span class="menu-second-word" data-hover="Projects ">
                 Projects
               </span>
             </span>
           </Link>
         </li>
 
-        <li class="menu__item">
-          <Link to='/contactme' class="menu__link">
-            <span class="menu__title">
-              <span class="menu__first-word" data-hover="Contact">
+        <li class="menu-item">
+          <Link to='/contactme' class="menu-link">
+            <span class="menu-title">
+              <span class="menu-first-word" data-hover="Contact">
                 Contact&nbsp; 
               </span>
-              <span class="menu__second-word" data-hover="Me">
+              <span class="menu-second-word" data-hover="Me">
                 Me
               </span>
             </span>
