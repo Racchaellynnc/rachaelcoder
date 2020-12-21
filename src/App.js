@@ -14,7 +14,7 @@ import { ReactComponent as LightSvg} from '../src/assets/lightbulb.svg';
 
 function App ({theme}) {
 const themeToggle = useTheme();
-  const Button = styled.button`
+  const Buttons = styled.button`
     background: ${buttonBackgroundColor};
     border: 2px solid #1a1a1a56;
     border-radius: 0.3em;
@@ -59,13 +59,13 @@ return (
             <div className='header' >
             <Header />
               <div className='options'>
-                <Button className='button' onClick={() => themeToggle.toggle()}>
+                <Buttons className='button' onClick={() => themeToggle.toggle()}>
                   <Slider className="switch-slider" >  
                     <div className="button-text">
                       <LightSvg className="svg"/>
                     </div>
                   </Slider>
-                </Button>  
+                </Buttons>  
                </div> 
               </div>
           <Switch>

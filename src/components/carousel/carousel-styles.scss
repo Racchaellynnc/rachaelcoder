@@ -1,0 +1,74 @@
+.carousel-container{
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 400px;
+}
+
+.caption-wrapper {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.carousel-caption {
+    right: 0%;
+    left: 0%;
+    bottom: 0px;
+}
+
+.image1 {
+    background-image: url('../../assets/lw.svg');
+    background-size: cover;
+    height: 700px;
+    opacity: 0.7;
+    z-index: 8;
+}
+
+.image2 {
+    background-image: url('../../assets/coderality.svg');
+    background-size: cover;
+    height: 700px;
+    opacity: 0.7;
+    z-index: 8;
+}
+
+.image3 {
+    background-image: url('../../assets/coderality.svg');
+    background-size: cover;
+    height: 700px;
+    opacity: 0.7;
+    z-index: 8;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+p{
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0px !important;
+    position: absolute;
+z-index: 2;
+}
+
+.description {
+    text-align: center;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2 !important;
+}
+
+.modal-button{
+    margin-top: -40px !important;
+}

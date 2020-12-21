@@ -5,7 +5,8 @@ import { ReactComponent as LwPhoto } from '../../assets/lw.svg';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as Website } from '../../assets/globe.svg';
 import { ReactComponent as Cf } from '../../assets/cf.svg';
-import { Modal } from 'semantic-ui-react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import ProjectCarousel from '../../components/carousel/carousel';
 
 
 const ProjectPage = () => (
@@ -13,11 +14,15 @@ const ProjectPage = () => (
 		<div className="heading">
 			Check out the projects I've worked on
 			<div className="heading-tip">
-				(Click on the pictures for more detail)
+				<ProjectCarousel />
 			</div>
 		</div>
 		<div className="project">
-			<Modal trigger={<CoderalityPhoto className="project-image">Show Modal</CoderalityPhoto>}>
+
+			
+
+
+			{/* <Modal trigger={<CoderalityPhoto className="project-image">Show Modal</CoderalityPhoto>}>
 				<Modal.Header className='modal-header'>Coderality</Modal.Header>
 				<Modal.Content image>
 					<Modal.Description>
@@ -73,7 +78,7 @@ const ProjectPage = () => (
 						
 					</Modal.Description>
 				</Modal.Content>
-			</Modal>
+			</Modal> */}
 		</div>
 	</div>
 );
