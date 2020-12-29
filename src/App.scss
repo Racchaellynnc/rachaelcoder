@@ -17,13 +17,13 @@ a{
 }
 button{
   width: 65px;
-  height: 30px;
+  height: 38px;
   border-radius: 100px !important;
 }
 .svg{
-  width: 20px;
-  padding-top: 2px;
-  margin-right: 0px;
+  width: 32px;
+  margin-left: -6.5px;
+  margin-top: -2px;
 }
 .nav-menu {
   display: flex;
@@ -66,5 +66,17 @@ width: 10px;
     }
     .icons {
       color: #50B0BD;
+    }
+    @media screen and (max-width: 350px){
+      button{
+        width: 55px;
+        height: 30px;
+        border-radius: 100px !important;
+      }
+      .svg{
+        width: 24px;
+        margin-left: -7.5px;
+        margin-top: -8px;
+      }
     }
   }

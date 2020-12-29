@@ -15,7 +15,7 @@ function ModalComponent(props) {
         </Modal.Header>
         <Modal.Body>
           <h4>What I did at Lavish Web</h4>
-          <p>
+          <p className="modal-p">
           I worked on Lavish Web during and built the Landing Page, Job Board, and part of the Blog. I designed and built UI/UX code for several projects on a
 							team of developers. I built applications using HTML, CSS,
 							Node, and JavaScript. I used React and Vue for building
@@ -27,7 +27,7 @@ function ModalComponent(props) {
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button className="button" onClick={props.onHide}>Close</Button>
+          <Button className="modal-button" onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );

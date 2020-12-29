@@ -26,7 +26,16 @@ background-color: ${FormInput};
 
 const ContactMePage = () => (
 	<div className='landing-page'>
-		<div class="contact-box">
+		<div 
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-mirror="true"
+			data-aos-once="false"
+			data-aos-anchor-placement="top-center"
+			class="contact-box">
 			<ContactText>
 				If you want to code with me in the future or if you need help developing or designing a website, reach out to me by filling out the form below. I love meeting new people and helping where ever I can.
 			<br></br><br></br>Thank you for taking the time to view my page.<br></br>
@@ -34,7 +43,17 @@ const ContactMePage = () => (
 			</ContactText>
 			
     	</div>
-		<Contact className='box'>
+		<Contact 
+			className='box'
+			data-aos="flip-up"
+			data-aos-offset="200"
+			data-aos-delay="350"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-mirror="true"
+			data-aos-once="false"
+			data-aos-anchor-placement="top-bottom"
+		>
 			<Form action="https://getsimpleform.com/messages?form_api_token=b8895f4d6999fd03eb1d4bbfeb5dc4a8" method="post">
 				<input type='hidden' name='https://rachaelcoder.com/' value='https://rachaelcoder.com/' />
 				<Form.Group controlId="exampleForm.ControlInput1">

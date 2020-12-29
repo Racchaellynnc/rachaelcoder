@@ -5,6 +5,11 @@ export const backgroundColor = theme('mode', {
   dark: '#031c26'
 });
 
+export const SliderBackground = theme('mode', {
+  light: '#0C5667',
+  dark: '#c3f2f7'
+});
+
 export const textColor = theme('mode', {
   light: '#444',
   dark: '#666'
@@ -20,8 +25,8 @@ export const HeadingSecondWord = theme('mode', {
   dark: '#999'
 });
 export const buttonBackgroundColor = theme('mode', {
-  light: '#4f4f4f',
-  dark: '#dbfaff'
+  light: '#F2FDFF',
+  dark: '#0C5667'
 });
 
 export const buttonTextColor = theme('mode', {
