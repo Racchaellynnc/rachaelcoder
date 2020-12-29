@@ -1,5 +1,4 @@
 import React from 'react';
-import './name.scss';
 import styled from 'styled-components';
 import { SvgStroke, SvgFill} from '../../theme';
 
