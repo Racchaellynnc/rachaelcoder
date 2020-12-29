@@ -9,8 +9,8 @@ import Footer from './components/footer/footer.jsx';
 import Work from './pages/workexperience/workexperience';
 import { useTheme } from './ThemeContext';
 import styled, { withTheme } from 'styled-components';
-import { buttonBackgroundColor, buttonTextColor, backgroundColor } from './theme';
-import { ReactComponent as LightSvg} from '../src/assets/lightbulb.svg';
+import { buttonBackgroundColor, buttonTextColor, backgroundColor, SliderBackground } from './theme';
+import { ReactComponent as LightSvg} from '../src/assets/darkmode.svg';
 
 function App ({theme}) {
 const themeToggle = useTheme();
@@ -29,29 +29,43 @@ const themeToggle = useTheme();
       @media screen and (max-width: 800px){
         margin-bottom: 20px;
         margin-left: 0px;
-        margin-top: 20px;
+        margin-right: 5px;
+        position: absolute;
       }
+      @media screen and (max-width: 350px){
+        padding-bottom: 0px;
+        padding-top: 2px;
+        margin-top: -3px;
+      }
+      
   `;
  const Slider = styled.button`
-    background: ${backgroundColor};
+    background: ${SliderBackground};
     width: 30px;
     height: 29px;
     border: none;
-    margin-left: ${theme.slide === 'on' ? '-27px' : '24px'};
+    margin-top: 1px;
+    margin-left: ${theme.slide === 'on' ? '-26px' : '22px'};
+    margin-right: ${theme.slide === 'on' ? '0px' : '-6px'};
     transition: 300ms ease margin;
     top: 10px;
     border-radius: 50%;
     box-shadow: none;
     color: ${buttonTextColor};
     cursor: pointer;
-    padding: 0.2em 0.2em;
     outline: none !important;
     box-shadow: none;
       @media screen and (max-width: 800px){
-        margin-left: ${theme.slide === 'on' ? '-27px' : '23px'};
         margin-top: 0.5px;
+
+      }
+      @media screen and (max-width: 350px){
+        height: 20px;
+        width: 21px;
       }
   `;
+
+  
 
 return (
       <div className="app">
@@ -60,7 +74,8 @@ return (
             <Header />
               <div className='options'>
                 <Buttons className='button' onClick={() => themeToggle.toggle()}>
-                  <Slider className="switch-slider" >  
+                  <Slider 
+                  className="switch-slider" >  
                     <div className="button-text">
                       <LightSvg className="svg"/>
                     </div>

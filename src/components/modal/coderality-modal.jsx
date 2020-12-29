@@ -12,10 +12,11 @@ import './modal-styles.scss';
         centered
       >
         <Modal.Header closeButton>
+          
         </Modal.Header>
         <Modal.Body >
           <h4>What I did at Coderality</h4>
-          <p>
+          <p className="modal-p">
             I made an e-commerce store that sells Programming T-Shirts and a Tech Blog. This website was built using React, 
 						Redux, Hooks, HOC, Node.JS GraphQL, StripeAPI, ContextAPI, GoogleMapsAPI and Firebase. This is a personal project of mine and was designed 
 						and built 100% by myself. I used Adobe XD to design mock-ups and Adobe Illustrator to design the logo, graphics and 
@@ -23,7 +24,7 @@ import './modal-styles.scss';
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button className="modal-button" onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
