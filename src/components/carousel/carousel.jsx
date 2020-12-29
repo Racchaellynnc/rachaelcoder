@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import LwModal from '../modal/lw-modal';
 import CoderalityModal from '../modal/coderality-modal';
 import { ReactComponent as CoderalityPhoto } from '../../assets/coderality.svg';
-import { ReactComponent as LwPhoto } from '../../assets/lw.svg';
+import { ReactComponent as LwPhoto } from '../../assets/lavish.png';
 
 
 function ProjectCarousel() {
@@ -24,9 +24,9 @@ function ProjectCarousel() {
         <Carousel.Caption className="caption-wrapper">
           <h3>Lavish Web Creations</h3>
             <p className="description">
-                <div>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                </div>
+            <div className="description-text">
+              Full-Stack Tech Blog with React, React Hooks, Functional Components, GraphQL, and Node.
+            </div>
                 <div>
                     <LwModal className="modal-button"/>    
                 </div>
@@ -39,8 +39,8 @@ function ProjectCarousel() {
         <Carousel.Caption className="caption-wrapper">
           <h3>Coderality</h3>
           <p className="description">
-            <div>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            <div className="description-text">
+              Full-Stack Store and Tech Blog built with React and Node.
             </div>
             <div>
                 <CoderalityModal className="modal-button"/>    
@@ -49,22 +49,6 @@ function ProjectCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
 
-     <Carousel.Item interval={4000}>
-        <div className="image3" ></div>
-        <Carousel.Caption className="caption-wrapper">
-          <h3>Casting Frontier</h3>
-         
-          <p className="description">
-            <div>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </div>
-            <div>
-                <CoderalityModal className="modal-button"/>    
-            </div>
-          </p>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
     </Carousel>
     );
   }

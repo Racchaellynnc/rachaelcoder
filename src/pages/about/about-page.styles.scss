@@ -1,56 +1,78 @@
 
 .career{
     padding-top: 30px;
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 28px !important;
     text-align: center;
     margin-top: 30px;
 }
-.wrapper {
-    margin: 0px;
-    width: 100%;
-}
-.skills{
-    font-size: 16px;
-    font-weight: 300;
-    border-radius: 22px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 18px;
-    padding-right: 18px;
-    margin: 3px;
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
 
-}    
-.skills:hover{
-    cursor: pointer;
+.wrapper{
+    scroll-behavior: smooth;
 }
-@media screen and (max-width: 800px){
-    .skills{
-        font-size: 14px;
-        margin: 3px;
-    }
+
+.skills-title{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    padding-top: 77px;
+    letter-spacing: 3px;
+    
+}
+.who-iam-container{
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    background-color: #C2F2F7;
+}
+
+.who-iam-title{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    padding-top: 77px;
+    letter-spacing: 3px;
+}
+
+.my-photo {
+    width: 35%;
+    border-radius: 4px;
+}
+
+.my-text{
+    flex-direction: row;
+    width: 55%;
+    margin: auto;
+}
+.me{
+    width: 333px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+}
+
+.animation-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .pic-container{
-    height: 65vh;
+    height: 77vh;
     width: 50%;
     margin: auto;
     justify-content: center;
     margin-top: 222px;
 }
+
+
 .name-svg{
     width: 70%;
 }
-.skills-container{
-    display: none;
-    width: 90%;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-    margin-bottom: 150px;
-}
+
 .about-me {
     display: flex;
     flex-direction: column;
@@ -59,28 +81,44 @@
     margin: auto;
     border-radius: 4px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
+  }
+  
+.skills-icon-wrapper{
+    width: 80%;
+    margin: auto;
+}
 
-  }
-  .parallax-container {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    perspective: 8px;
-    perspective-origin: 0%;
-    display: flex;
-  }
+@media screen and (max-width: 1277px){
+    .me{
+        width: 200px;
+    }
+}
+
+
 @media screen and (max-width: 800px){
+    .skills{
+        font-size: 14px;
+        margin: 3px;
+    }
+    .my-photo{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    .me{
+        width:100%;
+    }
     .career{
         padding: 20px;
         font-size: 22px;
     }
     .pic{
-    display: none;
+        display: none;
     }
     .pic-container{
         height: 55vh;
@@ -90,4 +128,3 @@
         margin-top: 300px;
     }
 }
-

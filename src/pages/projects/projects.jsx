@@ -7,16 +7,29 @@ import { ReactComponent as Website } from '../../assets/globe.svg';
 import { ReactComponent as Cf } from '../../assets/cf.svg';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectCarousel from '../../components/carousel/carousel';
+import {AboutTitles} from '../../theme';
+import styled from 'styled-components';
 
+const Titles = styled.div`
+width: 100%;
+text-align: center;
+margin: auto;
+font-size: 22px;
+padding-top: 77px;
+letter-spacing: 3px;
+color: ${AboutTitles};
+`
 
 const ProjectPage = () => (
 	<div className="photo-box">
-		<div className="heading">
-			Check out the projects I've worked on
+		<Titles>
+			CHECK OUT MY PROJECTS 
+		</Titles>
+
+			
 			<div className="heading-tip">
 				<ProjectCarousel />
 			</div>
-		</div>
 		<div className="project">
 
 			

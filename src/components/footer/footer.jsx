@@ -4,13 +4,23 @@ import { ReactComponent as Github } from '../../assets/githubicon.svg';
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
 import { ReactComponent as Facebook } from '../../assets/facebook.svg';
 import styled from 'styled-components';
-import { FooterColor, FooterText, FooterSmallText } from '../../theme';
+import { FooterColor, FootersIcon, AboutTitles } from '../../theme';
+
+const Titles = styled.div`
+width: 100%;
+text-align: center;
+margin: auto;
+font-size: 22px;
+padding-top: 27px;
+letter-spacing: 3px;
+color: ${AboutTitles};
+`
 
 const Footers = styled.div`
 width: 100%;
 display: flex;
 flex-wrap: wrap;
-flex-direction: row;
+flex-direction: column;
 background: ${FooterColor};
 text-align: center;
 justify-content: center;
@@ -22,60 +32,42 @@ padding: 10px;
 }
 `;
 
-const Text = styled.div`
-font-size: 22px;
-font-weight: 200;
-padding-top: 20px;
-padding-bottom: 20px;
-line-height: 27px;
-color: ${FooterText};
-@media screen and (max-width: 800px){
-    line-height: 44px;
-    font-size: 22px;
-}
-`;
-
-const Icons = styled.div`
-width:50px;
-padding: 5px;
-`;
+const FooterIcons = styled.svg`
+width: 40px;
+padding: 3px;
+margin-top: -20px;
+margin-bottom: -20px;
+margin-left: 77px;
+margin-right: 77px;
+display: flex;
+justify-content: space-between;
+color: ${FootersIcon} !important;
+`
 
 const IconContainer = styled.div`
 display: flex;
+width: 100%;
+margin: auto;
+justify-content: center;
 flex-direction: row;
 margin: auto;
 `;
-const OtherText = styled.div`
-display: flex;
-font-weight: 200;
-color: ${FooterSmallText};
-flex-direction: column;
-font-size: 16px !important;
+
+const Link = styled.a`
+text-decoration: none;
 `;
 
 const Footer = () => (
     <Footers>
-        <Text className='text-area'>
-            Follow me on Social Media
-        </Text>
+        <Titles>
+             FIND ME ON SOCIAL MEDIA
+        </Titles>
         <IconContainer>
-            <Icons><a href="https://www.linkedin.com/in/rachael-coder-378b1170/" > <LinkedIn className="icon" /></a></Icons>
-            <Icons><a href="https://github.com/Racchaellynnc" > <Github className="icon" /></a></Icons>
-            <Icons><a href="https://www.facebook.com/rachael.codes.33" > <Facebook className="icon" /></a></Icons>
-            <Icons><a href="https://twitter.com/Rachaelcoder" > <Twitter className="icon" /></a></Icons>
+            <Link href="https://www.linkedin.com/in/rachael-coder-378b1170/" ><FooterIcons><LinkedIn/></FooterIcons> </Link>
+            <FooterIcons><Link href="https://github.com/Racchaellynnc" > <Github /></Link></FooterIcons>
+            <FooterIcons><Link href="https://www.facebook.com/rachael.codes.33" > <Facebook  /></Link></FooterIcons>
+            <FooterIcons><Link href="https://twitter.com/Rachaelcoder" > <Twitter /></Link></FooterIcons>
         </IconContainer>
-        <OtherText>
-            <div className="text-area2">
-                Email: rachycodes@gmail.com
-            </div>
-            <div className="text-area2">
-                Phone: 650-477-0577
-            </div>
-            <div className="text-area2">
-                Location: Silicon Valley, CA
-            </div>
-        </OtherText>
-       
     </Footers>
 );
 
