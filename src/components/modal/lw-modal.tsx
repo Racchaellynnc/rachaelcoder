@@ -3,7 +3,7 @@ import React from 'react';
 import './modal-styles.scss';
 import { Modal, Button } from 'react-bootstrap';
 
-function ModalComponent(props) {
+function ModalComponent(props : any) {
     return (
       <Modal
         {...props}
@@ -38,7 +38,7 @@ function ModalComponent(props) {
   
     return (
       <>
-        <div className="learn-more" variant="primary" onClick={() => setModalShow(true)}>
+        <div className="learn-more" onClick={() => setModalShow(true)}>
           LEARN MORE
         </div>
   

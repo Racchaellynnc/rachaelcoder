@@ -7,13 +7,15 @@ import CoderalityModal from '../modal/coderality-modal';
 import { ReactComponent as CoderalityPhoto } from '../../assets/coderality.svg';
 import { ReactComponent as LwPhoto } from '../../assets/lavish.png';
 
-
 function ProjectCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
+
+
 
   return (
     <Carousel className="carousel-container" activeIndex={index} onSelect={handleSelect}>

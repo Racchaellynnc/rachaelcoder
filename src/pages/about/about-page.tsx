@@ -34,6 +34,11 @@ margin: auto;
 justify-content: center;
 background-color: ${SkillsContainer};
 `
+
+const Rachael = styled.div`
+	width: 77%;
+`
+
 const Icons = styled.svg`
 max-width: 150px;
 margin: auto;
@@ -110,9 +115,13 @@ color: ${AboutMeText};
 AOS.init();
 
 const AboutPage = () => (
+
+	
 	<div className="wrapper">
 		<div className="pic-container">
-			<NameSvg className="name-svg" />
+			<Rachael>
+				<NameSvg/>
+			</Rachael>
 			<div className="career">
 				<Titles
 				data-aos="fade-up"

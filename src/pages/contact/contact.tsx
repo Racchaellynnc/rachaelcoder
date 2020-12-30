@@ -14,10 +14,18 @@ border-radius: 4px;
 margin-bottom: 77px;
 padding: 22px;
 background-color: ${ContactBox};
+@media screen and (max-width: 800px){
+	width: 95%;
+  }
 `;
 
 const ContactText  = styled.div`
 color: ${AboutTitles};
+width: 55%;
+margin: auto;
+@media screen and (max-width: 800px){
+	width: 95%;
+  }
 `;
 
 const FormColor  = styled.div`
@@ -35,7 +43,7 @@ const ContactMePage = () => (
 			data-aos-mirror="true"
 			data-aos-once="false"
 			data-aos-anchor-placement="top-center"
-			class="contact-box">
+			className="contact-box">
 			<ContactText>
 				If you want to code with me in the future or if you need help developing or designing a website, reach out to me by filling out the form below. I love meeting new people and helping where ever I can.
 			<br></br><br></br>Thank you for taking the time to view my page.<br></br>
@@ -54,7 +62,7 @@ const ContactMePage = () => (
 			data-aos-once="false"
 			data-aos-anchor-placement="top-bottom"
 		>
-			<Form action="https://getsimpleform.com/messages?form_api_token=b8895f4d6999fd03eb1d4bbfeb5dc4a8" method="post">
+			<Form className="form-box" action="https://getsimpleform.com/messages?form_api_token=b8895f4d6999fd03eb1d4bbfeb5dc4a8" method="post">
 				<input type='hidden' name='https://rachaelcoder.com/' value='https://rachaelcoder.com/' />
 				<Form.Group controlId="exampleForm.ControlInput1">
 					<Form.Label>Your Name</Form.Label>
