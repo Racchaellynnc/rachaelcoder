@@ -2,11 +2,10 @@ import React from 'react';
 import './App.scss';
 import Header from './components/header/header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import AboutPage from './pages/about/about-page.jsx';
+import AboutPage from './pages/about/about-page.tsx';
 import ContactMePage from './pages/contact/contact';
 import ProjectPage from './pages/projects/projects';
-import Footer from './components/footer/footer.jsx';
-import Work from './pages/workexperience/workexperience';
+import Footer from './components/footer/footer.tsx';
 import { useTheme } from './ThemeContext';
 import styled, { withTheme } from 'styled-components';
 import { buttonBackgroundColor, buttonTextColor, backgroundColor, SliderBackground } from './theme';
@@ -27,15 +26,8 @@ const themeToggle = useTheme();
     margin-right: 20px;
     outline: none !important;
       @media screen and (max-width: 800px){
-        margin-bottom: 20px;
-        margin-left: 0px;
-        margin-right: 5px;
-        position: absolute;
-      }
-      @media screen and (max-width: 350px){
         padding-bottom: 0px;
-        padding-top: 2px;
-        margin-top: -3px;
+        padding-top: 0px;
       }
       
   `;
@@ -56,12 +48,12 @@ const themeToggle = useTheme();
     outline: none !important;
     box-shadow: none;
       @media screen and (max-width: 800px){
-        margin-top: 0.5px;
-
-      }
-      @media screen and (max-width: 350px){
         height: 20px;
-        width: 21px;
+        width: 21px !important;
+        position: absolute;
+        margin-top: -8px !important;
+        margin-left: ${theme.slide === 'on' ? '-24px' : '4px'};
+        margin-right: ${theme.slide === 'on' ? '0px' : '-16px'};
       }
   `;
 
@@ -84,7 +76,6 @@ return (
                </div> 
               </div>
           <Switch>
-            <Route exact path='/workexperience' component={Work} />
             <Route exact path='/' component={AboutPage} />
             <Route exact path='/about' component={AboutPage} />
             <Route exact path='/projects' component={ProjectPage} />

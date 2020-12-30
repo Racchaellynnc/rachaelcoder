@@ -67,16 +67,15 @@ width: 10px;
     .icons {
       color: #50B0BD;
     }
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 800px){
       button{
         width: 55px;
-        height: 30px;
+        height: 28px;
+        margin-top: -10px;
         border-radius: 100px !important;
       }
       .svg{
-        width: 24px;
-        margin-left: -7.5px;
-        margin-top: -8px;
+        display: none;
       }
     }
   }
