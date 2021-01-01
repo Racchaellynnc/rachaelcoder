@@ -9,29 +9,12 @@ a{
     width: 100% !important;
     margin: 0px;
 }
-.icons{
-  width: 20px;
-  margin-right: 12px;
-  margin-top: 5px;
-  color: #777;
-}
 button{
   width: 65px;
-  height: 38px;
   border-radius: 100px !important;
-}
-.svg{
-  width: 32px;
-  margin-left: -6.5px;
-  margin-top: -2px;
 }
 .nav-menu {
   display: flex;
-}
-.fad {
-color: #222222;
-padding: 5px;
-width: 10px;
 }
 
 .header {
@@ -67,15 +50,15 @@ width: 10px;
     .icons {
       color: #50B0BD;
     }
-    @media screen and (max-width: 800px){
-      button{
-        width: 55px;
-        height: 28px;
-        margin-top: -10px;
-        border-radius: 100px !important;
-      }
-      .svg{
-        display: none;
-      }
-    }
+    // @media screen and (max-width: 800px){
+    //   button{
+    //     width: 55px;
+    //     height: 28px;
+    //     margin-top: -10px;
+    //     border-radius: 100px !important;
+    //   }
+    //   .svg{
+    //     display: none;
+    //   }
+    // }
   }

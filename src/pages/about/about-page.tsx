@@ -37,6 +37,7 @@ background-color: ${SkillsContainer};
 
 const Rachael = styled.div`
 	width: 77%;
+	margin: auto;
 `
 
 const Icons = styled.svg`
