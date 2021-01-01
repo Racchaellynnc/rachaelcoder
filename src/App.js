@@ -25,10 +25,6 @@ const themeToggle = useTheme();
     position: relative;
     margin-right: 20px;
     outline: none !important;
-      // @media screen and (max-width: 800px){
-      //   padding-bottom: 0px;
-      //   padding-top: 0px;
-      // }
       
   `;
  const Slider = styled.button`
@@ -48,14 +44,6 @@ const themeToggle = useTheme();
     cursor: pointer;
     outline: none !important;
     box-shadow: none;
-      // @media screen and (max-width: 800px){
-      //   height: 20px;
-      //   width: 21px !important;
-      //   position: absolute;
-      //   margin-top: -8px !important;
-      //   margin-left: ${theme.slide === 'on' ? '-24px' : '4px'};
-      //   margin-right: ${theme.slide === 'on' ? '0px' : '-16px'};
-      // }
   `;
 
   
