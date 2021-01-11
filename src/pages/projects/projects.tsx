@@ -1,10 +1,5 @@
 import React from 'react';
 import './projects.styles.scss';
-import { ReactComponent as CoderalityPhoto } from '../../assets/coderality.svg';
-import { ReactComponent as LwPhoto } from '../../assets/lw.svg';
-import { ReactComponent as Github } from '../../assets/github.svg';
-import { ReactComponent as Website } from '../../assets/globe.svg';
-import { ReactComponent as Cf } from '../../assets/cf.svg';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectCarousel from '../../components/carousel/carousel';
 import {AboutTitles} from '../../theme';

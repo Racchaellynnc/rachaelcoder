@@ -29,7 +29,7 @@ const themeToggle = useTheme();
   `;
  const Slider = styled.button`
     background: ${SliderBackground};
-    width: 29px;
+    width: 26px;
     height: 26px;
     border: none;
     position: absolute;
